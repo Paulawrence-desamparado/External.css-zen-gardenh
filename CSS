@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Old+Mincho:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    isolation: isolate;
+    font-family: 'Zen Old Mincho', serif;
+    background: none;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: -10px;
+    background: url('https://i.pinimg.com/1200x/ce/d2/d0/ced2d07a053bcac06ecc6331a4182a60.jpg')
+                no-repeat center center;
+    background-size: cover;
+    filter: blur(6px);
+    z-index: -1;
+}
+
+
+.page-wrapper {
+    background-color: rgba(233, 137, 177, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 240, 246, 0.45);
+    box-sizing: border-box;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+
+    width: min(1120px, 94%);
+    margin: 30px auto;
+}
+
+
+.intro header {
+    padding: 30px 15px;
+    background-color: rgba(255, 225, 237, 0.30);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+
+h1 {
+    font-family: 'Yuji Syuku', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #8f315b;
+    text-shadow: 2px 2px 0 rgba(255, 240, 246, 0.8);
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+}
